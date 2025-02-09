@@ -23,16 +23,75 @@ ENPM_701_Homework_1/
 │── ENPM701__Homework1_NeerajLaul_120518973.pdf               # Final compiled report with plots
 │── imudata.txt              # IMU accelerometer data
 │── solution.py              # Python script for data processing & plotting
-│── plots/                   # Folder containing generated plots
-│   ├── pitch_analysis_2pt.png
-│   ├── pitch_analysis_4pt.png
-│   ├── pitch_analysis_8pt.png
-│   ├── pitch_analysis_16pt.png
-│   ├── pitch_analysis_64pt.png
-│   ├── pitch_analysis_128pt.png
-│── pitch_analysis_2pt.pdf   # 2-pt Moving Average plot
-│── pitch_analysis_4pt.pdf   # 4-pt Moving Average plot
-│── pitch_analysis_8pt.pdf   # 8-pt Moving Average plot
-│── pitch_analysis_16pt.pdf  # 16-pt Moving Average plot
-│── pitch_analysis_64pt.pdf  # 64-pt Moving Average plot
-│── pitch_analysis_128pt.pdf # 128-pt Moving Average plot
+├── pitch_analysis_2pt.png
+├── pitch_analysis_4pt.png
+├── pitch_analysis_8pt.png
+├── pitch_analysis_16pt.png
+├── pitch_analysis_64pt.png
+├── pitch_analysis_128pt.png
+
+```
+###Installation And Dependancies
+##Requirements
+Ensure you have Python 3.x installed with the following libraries:
+
+- NumPy (for numerical operations)
+- Matplotlib (for plotting)
+##Install Dependencies
+If not already installed, run:
+### Install Dependencies
+If not already installed, run:
+```bash
+pip install numpy matplotlib
+```
+
+---
+
+## Running the Code
+### Clone the Repository
+```bash
+git clone https://github.com/nslaul/ENPM_701_Homework_1.git
+cd ENPM_701_Homework_1
+```
+
+### Execute the Script
+Run the following command to generate and save the plots:
+```bash
+python solution.py
+```
+
+This will:
+- Read and process **`imudata.txt`**.
+- Generate **six plots** (PNG & PDF) with moving averages.
+- Display each figure one by one.
+
+---
+
+## Output Files
+After running the script, the following files will be created:
+- **Six PNG plots** (`pitch_analysis_2pt.png`, `pitch_analysis_4pt.png`, etc.)
+- **Six PDF plots** (same as PNG but in PDF format)
+
+These files will be saved in the `plots/` directory.
+
+---
+
+## LaTeX Report
+The **LaTeX report (`report.tex`)** contains:
+- Code explanations
+- Figures of generated plots
+- Moving average analysis
+- Conclusion on data smoothing & noise reduction
+
+### Compiling the Report
+To generate `report.pdf` from the LaTeX source:
+```bash
+pdflatex report.tex
+```
+Alternatively, open and compile `report.tex` in **Overleaf**.
+
+---
+
+## References
+- **ADXL327 Datasheet**: [Analog Devices Documentation](https://www.analog.com/media/en/technical-documentation/data-sheets/adxl327.pdf)
+- **Python Libraries Used**: NumPy, Matplotlib

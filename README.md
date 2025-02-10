@@ -31,8 +31,8 @@ ENPM_701_Homework_1/
 ├── pitch_analysis_128pt.png
 
 ```
-###Installation And Dependancies
-##Requirements
+## Installation And Dependancies
+### Requirements
 Ensure you have Python 3.x installed with the following libraries:
 
 - NumPy (for numerical operations)
